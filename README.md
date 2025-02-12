@@ -57,6 +57,7 @@ Make sure you have an AWS account and access to the AWS Management Console.
 Assign the following permissions:
 * EC2 Access → For managing virtual machines.
 * ECR (Elastic Container Registry) → To store Docker images.
+      -Save the URI: 559050243996.dkr.ecr.eu-north-1.amazonaws.com/chicken
 
 ### 3️⃣ Create an ECR Repository
 To store and manage your Docker images.
@@ -84,8 +85,10 @@ Follow the instructions to connect your EC2 instance.
 In GitHub Actions → Repository Secrets, add:
 AWS_ACCESS_KEY_ID=
 AWS_SECRET_ACCESS_KEY=
-AWS_REGION=us-east-1
-ECR_REPOSITORY_NAME=simple-app
+AWS_REGION= eu-north-1
+AWS_ECR_LOGIN_URL=
+ECR_REPOSITORY_NAME = simple-app
+
 
 
 ## Azure CI/CD Deployment with GitHub Actions
